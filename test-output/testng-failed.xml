@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FreyrTest]">
+  <test thread-count="5" name="LoginTest">
+    <classes>
+      <class name="com.freyr.testcases.FreyeLogin"/>
+    </classes>
+  </test> <!-- LoginTest -->
+  <test name="LoginTest(failed)">
+    <classes>
+      <class name="com.freyr.testcases.FreyeLogin">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.freyr.testcases.FreyeLogin -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [FreyrTest] -->
